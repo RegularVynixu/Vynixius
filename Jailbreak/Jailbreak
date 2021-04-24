@@ -13,8 +13,12 @@
     
     [ What's new? ]
     
-    [*] Increased max. WalkSpeed to 120
-    [*] Increased max. Fly Speed to 120
+    [+] Added Party Mode Animation Speed
+    [+] Added Set Radio Volume
+    [+] Added Set Radio Bass
+    [+] Added Spoof Radio
+    [+] Added Anti Fall Through Map
+    [*] Made some changes to teleporting
     
 ]]--
 

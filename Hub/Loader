@@ -1,1 +1,3 @@
+repeat wait() until game.Players.LocalPlayer
 
+print("bandwidth cringe")

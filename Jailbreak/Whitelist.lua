@@ -1,1 +1,1 @@
-return {"Synapse X", "ScriptWare", "Sentinel", "Krnl", "Fluxus", "Electron", "Omega X"}
+return {"Synapse X", "ScriptWare", "Krnl", "Fluxus", "Electron", "Omega X"}

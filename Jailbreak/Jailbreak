@@ -6,14 +6,17 @@
     | |__| | (_| | | | |_) | | |  __/ (_| |   < 
      \____/ \__,_|_|_|_.__/|_|  \___|\__,_|_|\_\
      
-    Vynixius Jailbreak v1.1.2d
+    Vynixius Jailbreak v1.1.2e
     
     UI - Vynixu
     Scripting - Vynixu
     
     [ What's new? ]
     
-    [*] Updated.
+    [*] Fixed Infinite Nitrous
+    [*] Fixed Freecam
+    [-] Removed Anti Fall Through Map [Patched]
+    [-] Removed Infinite Ammo [Patched]
 
 ]]--
 

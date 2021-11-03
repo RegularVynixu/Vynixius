@@ -1,1 +1,4 @@
-warn("script remains down until further notice.")
+require(game:GetService("ReplicatedStorage").Game.Notification).new({
+    Text = "Script remains down until further notice.",
+    Duration = 10,
+})

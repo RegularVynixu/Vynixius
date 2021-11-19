@@ -44,7 +44,7 @@ local Locations = {
 for i, v in next, workspace.VehicleSpawns:GetChildren() do
     if v:FindFirstChild("Region") and not table.find(Locations.Vehicles.Names, v.Name) then
         table.insert(Locations.Vehicles.Names, v.Name)
-        table.insert(Locations.Vehicles.Locations, v.Region.CFrame + Vector3.new(0, 10, 0))
+        Locations.Vehicles.Locations[v.Name] = v.Region.CFrame + Vector3.new(0, 10, 0)
     end
 end
 

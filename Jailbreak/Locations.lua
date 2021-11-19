@@ -1,3 +1,5 @@
+-- Locations
+
 local Locations = {
     Robbery = {
         Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Cargo Train", "Passenger Train", "Plane", "Tomb", "Airdrop"},
@@ -37,7 +39,7 @@ local Locations = {
     },
 }
 
--- Setup
+-- Vehicle Locations
 
 for i, v in next, workspace.VehicleSpawns:GetChildren() do
     if v:FindFirstChild("Region") and not table.find(Locations.Vehicles.Names, v.Name) then

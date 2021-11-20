@@ -2,7 +2,7 @@
 
 local Locations = {
     Robbery = {
-        Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Cargo Train", "Passenger Train", "Plane", "Tomb", "Airdrop"},
+        Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Tomb"},
         Locations = {
             ["Bank"] = CFrame.new(-12, 20, 782),
             ["Jewelry Store"] = CFrame.new(126, 20, 1368),
@@ -11,11 +11,11 @@ local Locations = {
             ["Donut Store"] = CFrame.new(90, 20, -1511),
             ["Gas Station"] = CFrame.new(-1526, 19, 699),
             ["Tomb"] = CFrame.new(620, 20, -470),
-            },
         },
-        Misc = {
-            Names = {"Prison Yard", "1 Million Dealership", "Volcano Base", "Military Base", "Secret Police Base", "City Base", "Boat Docks", "Airport", "Fire Station", "Gun Store", "Pet Shop", "JetPack Mountain", "Pirate Hideout", "Lighthouse", "Prison Island"},
-            Locations = {
+    },
+    Misc = {
+        Names = {"Prison Yard", "1 Million Dealership", "Volcano Base", "Military Base", "Secret Police Base", "City Base", "Boat Docks", "Airport", "Fire Station", "Gun Store", "Pet Shop", "JetPack Mountain", "Pirate Hideout", "Lighthouse", "Prison Island"},
+        Locations = {
             ["Prison Yard"] = CFrame.new(-1220, 18, -1760),
             ["1 Million Dealership"] = CFrame.new(704, 19, -1530),
             ["Volcano Base"] = CFrame.new(1820, 46, -1620),
@@ -33,7 +33,7 @@ local Locations = {
             ["Prison Island"] = CFrame.new(-2917, 24, 2312),
         },
     },
-    Vehicles = {
+    Vehicle = {
         Names = {},
         Locations = {},
     },
@@ -42,9 +42,9 @@ local Locations = {
 -- Vehicle Locations
 
 for i, v in next, workspace.VehicleSpawns:GetChildren() do
-    if v:FindFirstChild("Region") and not table.find(Locations.Vehicles.Names, v.Name) then
-        table.insert(Locations.Vehicles.Names, v.Name)
-        Locations.Vehicles.Locations[v.Name] = v.Region.CFrame + Vector3.new(0, 10, 0)
+    if v:FindFirstChild("Region") and not table.find(Locations.Vehicle.Names, v.Name) then
+        table.insert(Locations.Vehicle.Names, v.Name)
+        Locations.Vehicle.Locations[v.Name] = v.Region.CFrame + Vector3.new(0, 10, 0)
     end
 end
 

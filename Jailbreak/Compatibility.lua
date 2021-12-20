@@ -35,6 +35,6 @@ if #missing > 0 then
         end
         rconsoleprint("\n(Report this issue in a ticket, with a screencapture of this prompt.)")
     else
-        warn("[".. exeName.. "] Missing required function(s) :", unpack(#missing))
+        warn("[".. exeName.. "] Missing required function(s) :", unpack(missing))
     end
 end

@@ -37,3 +37,5 @@ if #missing > 0 then
         warn("[".. exeName.. "] Missing required function(s) :", unpack(missing))
     end
 end
+
+return #missing == 0

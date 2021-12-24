@@ -20,7 +20,7 @@ local funcs = {
 local missing = {}
 for i, v in next, funcs do
     if not v then
-        table.insert(missing, i)
+        missing[#missing + 1] = v
     end
 end
 

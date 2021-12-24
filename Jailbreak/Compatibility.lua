@@ -20,7 +20,7 @@ local funcs = {
 local missing = {}
 for i, v in next, funcs do
     if not v then
-        missing[#missing + 1] = v
+        missing[#missing + 1] = i
     end
 end
 
@@ -37,6 +37,8 @@ if #missing > 0 then
     else
         warn("[".. exeName.. "] Missing required function(s) :", unpack(missing))
     end
+    game:GetService("Players").LocalPlayer:Kick("\nExecutor is not compatible.")
+    return
 end
 
-return #missing == 0
+game:GetService("Players").LocalPlayer:Kick("\nExecutor is compatible.")

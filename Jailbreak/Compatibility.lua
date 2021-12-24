@@ -2,6 +2,7 @@ local funcs = {
     ["getgc"] = getgc,
     ["islclosure"] = islclosure,
     ["newcclosure"] = newcclosure,
+    ["getconnections"] = getconnections,
     ["firesignal"] = firesignal,
     ["isclosure"] = iskrnlclosure or isexecutorclosure or is_synapse_function,
     ["setidentity"] = (syn and syn.set_thread_identity) or set_thread_identity or setthreadidentity or setthreadcontext,

@@ -17,7 +17,7 @@
 
     [ Script ]
         [+] Added Delta compatibility support
-        [+] Added Delta compatibility support
+        [+] Added Electron compatibility support
     [ LocalPlayer ]
         [ Utilities ]
             [+] Added Auto Redeem Codes

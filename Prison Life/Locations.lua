@@ -16,10 +16,9 @@ for i, v in next, workspace.Prison_Cellblock:GetDescendants() do
     end
 end
 
-return {
-    Names = {"Cell", "Cell Block", "Cafeteria", "Guard Area", "Prison Yard", "Prison Garage", "Prison Entrance", "Criminal Base", "City"},
+local Locations = {
+    Names = {"Cell Block", "Cafeteria", "Guard Area", "Prison Yard", "Prison Garage", "Prison Entrance", "Criminal Base", "City"},
     Locations = {
-        ["Cell"] = Cell.spawnbrick.CFrame,
         ["Cell Block"] = CFrame.new(916, 100, 2448),
         ["Cafeteria"] = CFrame.new(884, 101, 2288),
         ["Guard Area"] = CFrame.new(834, 100, 2316),
@@ -30,3 +29,18 @@ return {
         ["City"] = CFrame.new(-361, 56, 1734),
     },
 }
+
+if Cell then
+    for i = 1, #Locations.Names do
+        local idx = #Locations.Names - i
+        Locations.Names[idx + 1] = Locations.Names[idx]
+    end
+    for i = 1, #Locations.Locations do
+        local idx = #Locations.Locations - i
+        Locations.Locations[idx + 1] = Locations.Locations[idx]
+    end
+    Locations.Names[1] = "Cell"
+    Locations.Locations[1] = Cell.spawnbrick.CFrame
+end
+
+return Locations

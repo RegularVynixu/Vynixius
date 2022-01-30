@@ -30,7 +30,7 @@ local Locations = {
     },
 }
 
-if Cell then
+if Cell then -- Some gay shit for when the cells somehow break /shrug
     for i = 1, #Locations.Names do
         local idx = #Locations.Names - i
         Locations.Names[idx + 1] = Locations.Names[idx]
@@ -39,8 +39,9 @@ if Cell then
         local idx = #Locations.Locations - i
         Locations.Locations[idx + 1] = Locations.Locations[idx]
     end
+    
     Locations.Names[1] = "Cell"
-    Locations.Locations[1] = Cell.spawnbrick.CFrame
+    Locations.Locations[Locations.Names[1]] = Cell.spawnbrick.CFrame
 end
 
 return Locations

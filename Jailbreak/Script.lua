@@ -16,10 +16,11 @@
     [ What's new? ]
 
     [ Visuals ]
-        [+] Added Criminal ESP
-        [+] Added Police ESP
-        [+] Added Prisoner ESP
-        [+] Added Airdrop ESP
+        [ ESP ]
+            [+] Added Criminal ESP
+            [+] Added Police ESP
+            [+] Added Prisoner ESP
+            [+] Added Airdrop ESP
         [+] Added ESP Settings
 
 ]]--

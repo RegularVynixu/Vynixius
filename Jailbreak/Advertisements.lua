@@ -9,7 +9,7 @@ return {
             Size = UDim2.new(0, 485, 0, 60),
         },
     },
-    {
+    --[[{
         name = "Fluxus",
         data = {
             Image = "https://media.discordapp.net/attachments/921876319057375273/938529994408353832/New_Project_13D6D9C.png?width=1328&height=747",
@@ -18,5 +18,5 @@ return {
         properties = {
             Size = UDim2.new(0, 332, 0, 187),
         },
-    },
+    },]]
 }

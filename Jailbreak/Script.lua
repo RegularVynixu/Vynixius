@@ -18,8 +18,6 @@
     [ Vehicle ]
             [ Utilities ]
                     [+] Added Select Horn Type [clientsided]
-            [ Car Mods ]
-                    [+] Added Instant Tow Vehicles
     [ Combat ]
             [ Gun Mods ]
                     [*] Fixed Auto Reload

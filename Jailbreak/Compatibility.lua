@@ -1,5 +1,5 @@
 return function(bool)
-    local Check = table.find({"Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "Electron", "Trigon", "Fluxus", "ScriptWare"}, ({identifyexecutor()})[1]) and true or false
+    local Check = table.find({"Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "Electron", "Fluxus", "ScriptWare"}, ({identifyexecutor()})[1]) and true or false
   
     if bool then
         local Notification = require(game:GetService("ReplicatedStorage").Game.Notification)

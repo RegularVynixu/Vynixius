@@ -13,7 +13,7 @@ return {
         name = "Delta",
         data = {
             Image = "https://media.discordapp.net/attachments/904307180956680252/954712956724199505/Delta.png",
-            --Invite = "",
+            Invite = "https://discord.gg/75Q2ejy9rn",
         },
         properties = {
             Size = UDim2.new(0, 286, 0, 90),

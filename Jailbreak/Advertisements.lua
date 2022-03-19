@@ -9,6 +9,16 @@ return {
             Size = UDim2.new(0, 485, 0, 60),
         },
     },
+    {
+        name = "Delta",
+        data = {
+            Image = "https://media.discordapp.net/attachments/904307180956680252/954712956724199505/Delta.png",
+            --Invite = "",
+        },
+        properties = {
+            Size = UDim2.new(0, 286, 0, 90),
+        },
+    },
     --[[{
         name = "Fluxus",
         data = {

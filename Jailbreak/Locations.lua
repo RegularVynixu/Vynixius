@@ -6,7 +6,7 @@ local Locations = {
         Locations = {
             ["Bank"] = CFrame.new(-12, 20, 782),
             ["Jewelry Store"] = CFrame.new(126, 20, 1368),
-            ["Museum"] = CFrame.new(1142, 104, 1247),
+            ["Museum"] = CFrame.new(1044, 101, 1240),
             ["Power Plant"] = CFrame.new(96, 21, 2371),
             ["Donut Store"] = CFrame.new(90, 20, -1511),
             ["Gas Station"] = CFrame.new(-1526, 19, 699),
@@ -15,7 +15,7 @@ local Locations = {
         },
     },
     Misc = {
-        Names = {"Prison Yard", "Prison Entrance", "Military Base", "Secret Agent Base", "City Criminal Base", "Volcano Base", "Boat Docks", "Cargo Port", "Airport", "1 Million Dealership", "Gun Store", "Glider Shop", "Pet Shop", "Jetpack Mountain", "Pirate Cove", "Prison Island", "Race Track", "Crater City"},
+        Names = {"Prison Yard", "Prison Entrance", "Military Base", "Secret Agent Base", "City Criminal Base", "Volcano Base", "Cargo Port", "Airport", "1 Million Dealership", "Gun Store", "Glider Shop", "Pet Shop", "Jetpack Mountain", "Pirate Cove", "Prison Island", "Race Track", "Crater City"},
         Locations = {
             ["Prison Yard"] = CFrame.new(-1220, 18, -1760),
             ["Prison Entrance"] = CFrame.new(228, 15, 1213),
@@ -23,7 +23,6 @@ local Locations = {
             ["Secret Agent Base"] = CFrame.new(1547, 70, 1669),
             ["City Criminal Base"] = CFrame.new(-243, 18, 1601),
             ["Volcano Base"] = CFrame.new(2284, 19, -2055),
-            ["Boat Docks"] = CFrame.new(-430, 21, 2025),
             ["Cargo Port"] = CFrame.new(-389, 21, 1964),
             ["Airport"] = CFrame.new(-1202, 41, 2846),
             ["1 Million Dealership"] = CFrame.new(704, 19, -1530),

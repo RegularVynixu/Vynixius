@@ -15,7 +15,7 @@ local Locations = {
         },
     },
     Misc = {
-        Names = {"Prison Yard", "Prison Entrance", "Military Base", "Secret Agent Base", "City Criminal Base", "Volcano Base", "Cargo Port", "Airport", "1 Million Dealership", "Gun Store", "Glider Shop", "Pet Shop", "Jetpack Mountain", "Pirate Cove", "Prison Island", "Race Track", "Crater City"},
+        Names = {"Prison Yard", "Prison Entrance", "Military Base", "Secret Agent Base", "City Criminal Base", "Volcano Base", "Cargo Port", "Airport", "1 Million Dealership", "Gun Store", "Glider Shop", "Pet Shop", "JetPack Building", "Pirate Cove", "Prison Island", "Race Track", "Crater City"},
         Locations = {
             ["Prison Yard"] = CFrame.new(-1220, 18, -1760),
             ["Prison Entrance"] = CFrame.new(-725, 63, 1553),
@@ -29,7 +29,7 @@ local Locations = {
             ["Gun Store"] = CFrame.new(391, 18, 533),
             ["Glider Shop"] = CFrame.new(172, 19, -1737),
             ["Pet Shop"] = CFrame.new(250, 20, -1615),
-            ["JetPack Mountain"] = CFrame.new(1384, 168, 2596),
+            ["JetPack Building"] = CFrame.new(-688, 220, -6005),
             ["Pirate Cove"] = CFrame.new(1975, 5, 2117),
             ["Prison Island"] = CFrame.new(-2917, 24, 2312),
             ["Race Track"] = CFrame.new(-1538, 12, -3956),

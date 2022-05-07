@@ -1,10 +1,11 @@
--- Locations
+-- Variables
 
+local VehicleBlacklist = {"BankTruck"}
 local Locations = {
     Robbery = {
         Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Tomb", "Casino"},
         Locations = {
-            ["Bank"] = CFrame.new(-12, 20, 782),
+            ["Bank"] = CFrame.new(4, 18, 865),
             ["Jewelry Store"] = CFrame.new(126, 20, 1368),
             ["Museum"] = CFrame.new(1044, 101, 1240),
             ["Power Plant"] = CFrame.new(96, 21, 2371),
@@ -25,7 +26,7 @@ local Locations = {
             ["Volcano Base"] = CFrame.new(2284, 19, -2055),
             ["Cargo Port"] = CFrame.new(-389, 21, 1964),
             ["Airport"] = CFrame.new(-1202, 41, 2846),
-            ["1 Million Dealership"] = CFrame.new(704, 19, -1530),
+            ["1 Million Dealership"] = CFrame.new(-334, 19, -5470),
             ["Gun Store"] = CFrame.new(391, 18, 533),
             ["Glider Shop"] = CFrame.new(172, 19, -1737),
             ["Pet Shop"] = CFrame.new(250, 20, -1615),
@@ -45,7 +46,7 @@ local Locations = {
 -- Vehicle Locations
 
 for i, v in next, workspace.VehicleSpawns:GetChildren() do
-    if v:FindFirstChild("Region") and not table.find(Locations.Vehicle.Names, v.Name) then
+    if v:FindFirstChild("Region") and not table.find(Locations.Vehicle.Names, v.Name) and not table.find(VehicleBlacklist, v.Name) then
         table.insert(Locations.Vehicle.Names, v.Name)
         Locations.Vehicle.Locations[v.Name] = v.Region.CFrame + Vector3.new(0, 10, 0)
     end

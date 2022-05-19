@@ -1,16 +1,32 @@
-return function(bool)
-    local Check = table.find({"Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "Electron", "ScriptWare", "KatoAPI"}, ({identifyexecutor()})[1]) and true or false
-  
-    if bool then
-        local Notification = require(game:GetService("ReplicatedStorage").Game.Notification)
-        local Settings = require(game:GetService("ReplicatedStorage").Resource.Settings)
-        local GameUtil = require(game:GetService("ReplicatedStorage").Game.GameUtil)
-        
-        Notification.Gui.ContainerNotification.ImageColor3 = Check and Color3.fromRGB(0, 255, 0) or Color3.fromRGB(255, 0, 0)
-        Notification.new({Text = "Your executor is ".. (not Check and "not " or "").. "supported.", Duration = 5})
-        task.wait(5)
-        Notification.Gui.ContainerNotification.ImageColor3 = Settings.TeamColor[GameUtil.Team]
-    else
-        return Check
+local Functions = {
+    getgc,
+    getfenv,
+    islclosure,
+    newcclosure,
+    getconnections,
+    firesignal,
+    hookmetamethod,
+    checkcaller,
+    getnamecallmethod,
+
+    debug.getproto,
+    debug.getupvalue,
+    debug.getupvalues,
+    debug.setupvalues,
+    debug.getconstant,
+    debug.getconstants,
+    debug.setconstant,
+    debug.getinfo,
+    debug.traceback,
+    
+    is_synapse_function or iskrnlclosure or isexecutorclosure,
+    (syn and syn.set_thread_identity) or set_thread_identity or setthreadidentity or setthreadcontext,
+    (syn and syn.request) or http_request or request,
+}
+
+for i, v in next, Functions do
+    if not v then
+        return false
     end
 end
+return true

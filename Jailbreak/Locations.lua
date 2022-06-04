@@ -1,6 +1,5 @@
 -- Variables
 
-local VehicleBlacklist = {"BankTruck"}
 local Locations = {
     Robbery = {
         Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Tomb", "Casino"},
@@ -12,7 +11,7 @@ local Locations = {
             ["Donut Store"] = CFrame.new(90, 20, -1511),
             ["Gas Station"] = CFrame.new(-1526, 19, 699),
             ["Tomb"] = CFrame.new(620, 20, -470),
-            ["Casino"] = CFrame.new(-256, 24, -4748),
+            ["Casino"] = CFrame.new(-256, 24, -4748)
         },
     },
     Misc = {
@@ -35,16 +34,15 @@ local Locations = {
             ["Pirate Cove"] = CFrame.new(1975, 5, 2117),
             ["Prison Island"] = CFrame.new(-2917, 24, 2312),
             ["Race Track"] = CFrame.new(-1538, 12, -3956),
-            ["Crater City"] = CFrame.new(-523, 19, -5648),
+            ["Crater City"] = CFrame.new(-523, 19, -5648)
         },
     },
-    Vehicle = {
-        Names = {},
-        Locations = {},
-    },
+    Vehicle = { Names = {}, Locations = {} }
 }
 
 -- Vehicle Locations
+
+local VehicleBlacklist = {"BankTruck"}
 
 for i, v in next, workspace.VehicleSpawns:GetChildren() do
     if v:FindFirstChild("Region") and not table.find(Locations.Vehicle.Names, v.Name) and not table.find(VehicleBlacklist, v.Name) then

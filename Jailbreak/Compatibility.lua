@@ -1,3 +1,4 @@
 return function()
-    return table.find({ "Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "Electron", "ScriptWare", "KatoAPI" }, identifyexecutor()) and true or false
+    local identity = identifyexecutor()
+    return table.find({"Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "Electron", "ScriptWare", "KatoAPI"}, identity) and true or false
 end

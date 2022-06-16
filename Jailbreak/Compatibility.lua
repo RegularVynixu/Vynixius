@@ -1,4 +1,1 @@
-return function()
-    local identity = identifyexecutor()
-    return table.find({"Synapse X", "Krnl", "OxygenU", "Comet", "Delta", "ScriptWare", "KatoAPI"}, identity) and true or false
-end
+return table.find({"Synapse X", "ScriptWare", "Krnl", "Comet", "Delta", "KatoAPI"}, ({identifyexecutor()})[1]) and true or false

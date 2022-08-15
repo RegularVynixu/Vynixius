@@ -6,7 +6,7 @@
     | |_) | |_| | | | (_| |  / ____ \  | |_) | (_) | (_| | |_  | | | (_) | |       | | | |  __/ (_| \__ \ |_| | | |  __/
     |____/ \__,_|_|_|\__,_| /_/    \_\ |____/ \___/ \__,_|\__| |_|  \___/|_|       |_|_|  \___|\__,_|___/\__,_|_|  \___|
 
-    Vynixius Build A Boat For Treasure v1.0.0b
+    Vynixius Build A Boat For Treasure
 
     UI - Vynixu
     Scripting - Vynixu

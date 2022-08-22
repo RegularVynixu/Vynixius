@@ -12,6 +12,7 @@ local games = {
     ["4623386862 5661005779"] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Loader.lua",
     ["155615604"] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Prison%20Life/Script.lua",
     ["1962086868"] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Tower%20of%20Hell/Tower%20of%20Hell"
+    ["6839171747"] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua",
 }
 
 for id, url in next, games do

@@ -2,7 +2,7 @@
 
 local Locations = {
     Robbery = {
-        Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Tomb", "Casino"},
+        Names = {"Bank", "Jewelry Store", "Museum", "Power Plant", "Donut Store", "Gas Station", "Tomb", "Casino", "Mansion"},
         Locations = {
             ["Bank"] = CFrame.new(4, 18, 865),
             ["Jewelry Store"] = CFrame.new(126, 20, 1368),
@@ -11,7 +11,8 @@ local Locations = {
             ["Donut Store"] = CFrame.new(90, 20, -1511),
             ["Gas Station"] = CFrame.new(-1526, 19, 699),
             ["Tomb"] = CFrame.new(620, 20, -470),
-            ["Casino"] = CFrame.new(-256, 24, -4748)
+            ["Casino"] = CFrame.new(-256, 24, -4748),
+            ["Mansion"] = CFrame.new(2925, 62, -4607)
         },
     },
     Misc = {

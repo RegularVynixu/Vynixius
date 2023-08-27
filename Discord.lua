@@ -1,4 +1,4 @@
 return {
-    Name = "RegularVynixu#0765",
+    Name = "vynixu.",
     Invite = ""
 }

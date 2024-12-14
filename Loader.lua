@@ -1,3 +1,9 @@
+-- I am desperate
+pcall(function()
+    local inviter = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+    inviter.Join("https://discord.com/invite/XatCHhqDr4")
+end)
+
 local games = {
     [{606849621}] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua",
     [{8982709021}] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/YouTube%20Life/Auto%20Farm.lua",

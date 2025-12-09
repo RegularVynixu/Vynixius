@@ -1,4 +1,4 @@
 return {
-    Name = "vynixu.",
-    Invite = ""
+    Name = "vynixu",
+    Invite = "XatCHhqDr4" -- http://vynixius.win/discord
 }
